@@ -464,33 +464,45 @@ img {
 
 @media only screen and (max-width:800px) { 
 
-    .hero-text {
-  
-    display: block;
-    top: 50px;
+        .hero-text {
     
+            display: block;
+    
+        
+        }
+
+
+
+        .hero-image {
+            background-image: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0),rgba(0, 0, 0, 1)), url("images/hero-t.webp");
     }
 
-
-
-    .hero-image {
-    background-image: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0),rgba(0, 0, 0, 1)), url("images/hero-t.webp");
- }
-
-   }
+    }
 
    @media only screen and (max-width:650px) { 
 
-       .hero-image {
-    background-image: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0),rgba(0, 0, 0, 1)), url("images/hero-m.webp");
- }
+        .hero-image {
+            background-image: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0),rgba(0, 0, 0, 1)), url("images/hero-m.webp");
+        }
 
- .hero-text h1 {
-    font-size: 4rem;
-   
-    line-height: 1.2;
+        .hero-text h1 {
+            font-size: 3.6rem;
+        
+            line-height: 1.2;
+            
+        }
+
+   }
+   @media only screen and (max-width:450px) { 
+
+
+.hero-text {
+  
+    display: block;
+    top: 70px;
     
-}
+    }
+
 
    }
 /* END HERO SECTION */
