@@ -68,6 +68,19 @@ p {
     font-size: 16px;
 }
 
+.hero-button {
+    border-radius: 0px;
+    background-color:#A61222;
+    color: #ffffff;
+    border: none;
+    padding: 15px;
+    margin-top: 400px;
+    margin-bottom: 40px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+}
+
 .mobile-button {
     border-radius: 0px;
     background-color:#A61222;
@@ -92,21 +105,7 @@ img {
 }
 
 
-input,
-textarea,
-button,
-select,
-a {
-  -webkit-tap-highlight-color: rgba(0,0,0,0);
-}
-a:focus,a:visited,a:active{
-  outline: #05454D solid 4px;
-  outline-offset: 4px;
-}
 
-* {
-    -webkit-tap-highlight-color: transparent;
-}
 
 /*END UNIVERSAL STYLES*/
 /* /////////////////////////// */
@@ -124,8 +123,17 @@ a:focus,a:visited,a:active{
 /* /////////////////////////// */
 /*HEADER*/
 
+
+.header {
+    background-color: #363A37;
+    margin: auto;
+    width: auto;    
+    height: 150px;
+}
+
+
 .header-container {
-    background-color: #000000;
+    background-color: #363A37;
     margin: auto;
     width: auto;
     max-width: 1300px;
@@ -285,7 +293,7 @@ a:focus,a:visited,a:active{
 }
 
 .header-container {
-    background-color: #000000;
+    background-color: #363A37;
     margin: 0px;
     width: auto;
     height: 80px;
@@ -295,6 +303,13 @@ a:focus,a:visited,a:active{
     justify-content: space-between;
 }
 
+.header {
+    background-color: #363A37;
+    margin: 0px;
+    width: auto;
+    height: 80px;
+    
+}
 }
 
 
@@ -339,26 +354,40 @@ a:focus,a:visited,a:active{
 
 
  .hero-image {
-    background-image: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55),rgba(0, 0, 0, 1)), url("images/wall.webp");
+    background-image: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0),rgba(0, 0, 0, 1)), url("images/hero.webp");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
-    height: 500px;
-    width: 100%;
+    padding: 60px 5% 0px 5%;
+    margin: auto;
+    height: 1000px;
+    width: auto;
+    max-width: 1300px;
  }
 
 .hero-text {
-  text-align: center;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  text-align: left;
+  text-transform: uppercase;
+  position: relative;
+  display: block;
+  top: 30%;
+  left: 0;
+
   color: white;
-  line-height: 1;
+  
   animation: fadeIn 3s ease-in 1s 1 normal forwards;
   opacity: 0;
 }
+
+.hero-text h1 {
+    font-size: 2.7rem;
+    display: block;
+    line-height: 1;
+    padding-bottom: 20px;
+}
+
+
 
 @keyframes fadeIn {
     0% { opacity: 0; }
@@ -366,6 +395,29 @@ a:focus,a:visited,a:active{
   }
 
 
+@media only screen and (max-width:800px) { 
+
+    .hero-text {
+  
+    display: block;
+    top: 200px;
+    
+    }
+
+    .hero-image {
+    background-image: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0),rgba(0, 0, 0, 1)), url("images/hero-t.webp");
+ }
+
+   }
+
+   @media only screen and (max-width:650px) { 
+
+       .hero-image {
+    background-image: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0),rgba(0, 0, 0, 1)), url("images/hero-m.webp");
+ }
+
+
+   }
 /* END HERO SECTION */
 /* /////////////////////////// */
 
@@ -432,7 +484,7 @@ a:focus,a:visited,a:active{
     flex-wrap: wrap;
     padding: 3% 0px 10% 0px;
     gap: 40px;
-    max-width: 800px;
+    max-width: 1200px;
     margin: auto;
     
 }
@@ -447,6 +499,11 @@ a:focus,a:visited,a:active{
     
     }
 
+    .rooms-text h1 {
+        font-size: 2.7rem;
+        text-transform: uppercase;
+    }
+
 
 
 .room-item {
@@ -454,8 +511,8 @@ a:focus,a:visited,a:active{
     flex-wrap: wrap;
     padding: 0px;
     background-color:#000000;
-    width: 300px;
-    height: 200px;
+    width: 375px;
+    height: 250px;
     
     
     
@@ -478,11 +535,13 @@ a:focus,a:visited,a:active{
 
 #rooms a {
     text-decoration: none;
+   
 }
 
 
 .room-item h1 {
     font-size: 30px;
+    padding-top: 12%;
 }
 
 .room-item h2 {
@@ -500,16 +559,16 @@ a:focus,a:visited,a:active{
 
 
 
-.wizard {
-    background-image: url(images/wizard-40.png);
+.pirate {
+    background-image: url(images/pirate-40.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     transition: background-image 750ms;
 }
 
-.wizard a:hover {
-    background-image: url(images/wizard-70.png);
+.pirate a:hover {
+    background-image: url(images/pirate-70.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover; 
@@ -570,6 +629,22 @@ a:focus,a:visited,a:active{
 .room-item a {    
     width: 100%;
     height: 100%;
+}
+
+@media only screen and (max-width:400px) { 
+
+    .room-item {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0px;
+    background-color:#000000;
+    max-width: 90%;
+    width: 375px;
+    height: 250px;
+    
+    
+    
+}
 }
 
 
