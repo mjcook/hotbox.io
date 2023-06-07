@@ -397,8 +397,10 @@ img {
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
+    top: 0px;
     padding: 0px 5% 0px 5%;
     margin: auto;
+    margin-top: -50px;
     height: 1000px;
     width: auto;
     max-width: 1300px;
@@ -409,7 +411,7 @@ img {
   text-transform: uppercase;
   position: relative;
   display: block;
-  top: 150px;
+  top: 200px;
   left: 0;
 
   color: white;
@@ -465,9 +467,11 @@ img {
     .hero-text {
   
     display: block;
-    top: 20px;
+    top: 50px;
     
     }
+
+
 
     .hero-image {
     background-image: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0),rgba(0, 0, 0, 1)), url("images/hero-t.webp");
@@ -481,6 +485,12 @@ img {
     background-image: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0),rgba(0, 0, 0, 1)), url("images/hero-m.webp");
  }
 
+ .hero-text h1 {
+    font-size: 4rem;
+   
+    line-height: 1.2;
+    
+}
 
    }
 /* END HERO SECTION */
