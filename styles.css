@@ -545,7 +545,7 @@ img {
     height: auto;
     margin: auto;
     text-align: center;
-    padding: 0 50px 0 50px;
+    padding: 0 5% 0 5%;
     
     }
 
@@ -745,12 +745,12 @@ img {
     height: auto;
     margin: auto;
     text-align: center;
-    padding: 170px 50px 12% 50px;
+    padding: 170px 5% 12% 5%;
     
     }
 
 #video-text {
-    padding: 25px;
+    padding: 0px 5% 0px 5%;
     line-height: .8;
     display: block;
 }
@@ -818,7 +818,9 @@ footer {
     align-items:flex-start;
     height: auto;
     flex-wrap: wrap;
-    padding: 20px 20px 60px 20px;
+    padding: 20px 0 60px 0px;
+    column-gap:50px;
+    row-gap: 30px;
     
     
     
@@ -843,6 +845,13 @@ footer {
 
 .footer-button-section {
     align-self: center;
+    justify-self: flex-start;
+    text-align: left;
+    text-transform: uppercase;
+    height: auto;   
+    line-height: 1.5;
+    text-align: left;
+    min-width: 300px;
 }
 
 
