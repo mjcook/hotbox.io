@@ -477,7 +477,7 @@ img {
 /* /////////////////////////// */
 /* ROOMS */
 
-#rooms {
+.rooms {
     display: flex;
     justify-content: center;
     align-content: center;
@@ -528,12 +528,12 @@ img {
 }
 
 
-#rooms h2 {
+.rooms h2 {
     padding: 0px;
     color: #ffffff;
 }
 
-#rooms a {
+.rooms a {
     text-decoration: none;
    
 }
@@ -548,7 +548,7 @@ img {
     font-size: 20px;
 }
 
-#rooms img {
+.rooms img {
     width: 300px;
     height: 200px;
     object-fit: cover;
@@ -736,7 +736,7 @@ footer a:hover img {
         padding-bottom: 25px;
     }
 
-    #rooms h1 {
+    .rooms h1 {
         font-size: 24px;
        
     }
@@ -770,7 +770,7 @@ footer a:hover img {
         display: none;
     }
 
-    #rooms {
+    .rooms {
     
         padding: 0px 0px 0px 0px;
         
@@ -789,7 +789,7 @@ footer a:hover img {
     
 
 
-    #rooms img {
+    .rooms img {
         max-width: 100%;
     }
 
