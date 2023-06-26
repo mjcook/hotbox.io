@@ -13,6 +13,16 @@ body {
     
 }
 
+
+@font-face {
+    font-family: 'Cairo';
+    src: url('fonts/cairogrotesque-regular-webfont.woff2') format('woff2'),
+         url('fonts/cairogrotesque-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
 a {
     
     text-decoration: underline;
@@ -39,14 +49,14 @@ section {
 
 h1 {
     color: #ffffff;
-    font-family: Oswald, sans-serif;
+    font-family: Cairo, sans-serif;
     font-weight: 500;
     font-size: 40px;
 }
 
 h2 {
     color: #ffffff;
-    font-family: Oswald, sans-serif;
+    font-family: Cairo, sans-serif;
     font-weight: 300;
     font-size: 25px;
     padding: 0px;
@@ -56,7 +66,7 @@ h2 {
 
 h3 {
     color: #ffffff;
-    font-family: Oswald, sans-serif;
+    font-family: Cairo, sans-serif;
     font-weight: 300;
     font-size: 18px;
     padding: 0px;
@@ -99,13 +109,28 @@ p {
     font-weight: bold;
 }
 
-.hero-button {
+.rooms-button {
     border-radius: 0px;
     background-color:#CF2C27;
     color: #ffffff;
     border: none;
     padding: 15px;
-    margin-top: 400px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.book-now-button {
+    border-radius: 0px;
+    background-color:#CF2C27;
+    color: #ffffff;
+    border: none;
+    padding: 15px;
+    margin-top: 20px;
     margin-bottom: 40px;
     text-align: center;
     text-decoration: none;
@@ -164,8 +189,9 @@ img {
 .header {
     background-color: #363A37;
     margin: auto;
-    width: auto;    
+    width: 100%;    
     height: 150px;
+    
 }
 
 
@@ -179,6 +205,7 @@ img {
     display: flex;
     align-items:center;
     justify-content: space-between;
+   
 }
 
 /*END HEADER*/
@@ -391,120 +418,192 @@ img {
 /* HERO SECTION */
 
 
- .hero-image {
-    background-image: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0),rgba(0, 0, 0, 1)), url("images/hero.webp");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-    top: 0px;
-    padding: 0px 5% 0px 5%;
-    margin: auto;
-    margin-top: -30px;
-    height: 1000px;
-    width: auto;
-    max-width: 1300px;
- }
+    .hero-image {
 
-.hero-text {
-  text-align: left;
-  text-transform: uppercase;
-  position: relative;
-  display: block;
-  top: 200px;
-  left: 0;
+        background-image: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0),rgba(0, 0, 0, 1)), url("images/hero.webp");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+        top: 0px;
+        padding: 0px 5% 0px 5%;
+        margin: auto;
+        margin-top: -30px;
+        height: 1000px;
+        width: auto;
+        max-width: 1300px;
 
-  color: white;
-  
-  animation: fadeIn 1s ease-in 1s 1 normal forwards;
-  opacity: 0;
-}
+    }
 
-.hero-text h1 {
-    font-size: 4.7rem;
-   
-    line-height: 1.2;
-    
-}
+    .hero-text {
 
-.hero-line-one {
-    
-    display: block;
-   
-    
-}
-.hero-line-two {
-    
-    display: inline-block;
-   
-    
-}
-.hero-line-three {
-    
-    display: inline-block;
-   
-    
-}
+        text-align: left;
+        text-transform: uppercase;
+        position: relative;
+        display: block;
+        top: 200px;
+        left: 0;
+        color: white; 
+        animation: fadeIn 1s ease-in 1s 1 normal forwards;
+        opacity: 0;
 
-.red-text {
-    
-    display: inline-block;
-   
-    
-}
+    }
 
+    .hero-text h1 {
 
+        font-size: 7rem;
+        line-height: 1;
+        
+    }
 
+    .hero-line-one {
+        
+        display: inline-block;
+        
+    }
+    .hero-line-two {
 
-@keyframes fadeIn {
-    0% { opacity: 0; }
-    100% { opacity: 1; }
-  }
+        display: inline-block;
+
+    }
+
+    .hero-line-three {
+        
+        display: block;
+        
+    }
+
+    .hero-line-four {
+        
+        display: inline-block;
+
+    }
+
+    .red-text {
+        
+        display: inline-block;
+        
+    }
 
 
-@media only screen and (max-width:800px) { 
+    .book-now-button {
+
+        display: none;
+
+    }
+
+
+
+    @keyframes fadeIn {
+
+        0% { opacity: 0; }
+        100% { opacity: 1; }
+        
+    }
+
+
+    @media only screen and (max-width:800px) { 
 
         .hero-text {
     
             display: block;
-    
-        
+
         }
 
 
 
         .hero-image {
+
             background-image: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0),rgba(0, 0, 0, 1)), url("images/hero-t.webp");
-    }
+        }
 
     }
 
-   @media only screen and (max-width:650px) { 
+    @media only screen and (max-width:650px) { 
 
         .hero-image {
             background-image: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0),rgba(0, 0, 0, 1)), url("images/hero-m.webp");
+            height: 700px;
         }
 
         .hero-text h1 {
-            font-size: 3.6rem;
-        
-            line-height: 1.2;
+
+            font-size: 4.5rem;
+            line-height: 1;
             
         }
 
-   }
-   @media only screen and (max-width:450px) { 
+    }
+
+    @media only screen and (max-width:450px) { 
 
 
-.hero-text {
-  
-    display: block;
-    top: 20px;
-    
+        .hero-text {
+        
+            display: block;
+            top: 40px;
+            
+        }
+
+        .hero-text h1 {
+            
+            font-size: 4.3rem;
+            line-height: 1;
+            
+        }
+
+        
+        .hero-line-one {
+            
+            display: block;
+            
+        }
+
+        .hero-line-two {
+
+            display: inline-block;
+
+        }
+
+        .hero-line-three {
+            
+            display: inline-block;
+            
+        }
+
+        .hero-line-four {
+            
+            display: inline-block;
+        
+            
+        }
+
+        .red-text {
+            
+            display: inline-block;
+            
+        }
+
+
+    }
+
+    @media only screen and (max-width:400px) { 
+
+        .rooms-button {
+
+            display: none;
+
+        }
+
+        .book-now-button {
+
+            display: inline-block;
+
+        }
+        
     }
 
 
-   }
 /* END HERO SECTION */
 /* /////////////////////////// */
 
@@ -523,10 +622,13 @@ img {
 /* ROOMS */
 
 #rooms {
+
     padding-top: 170px;
+
 }
 
 .rooms {
+
     display: flex;
     justify-content: center;
     align-content: center;
@@ -540,6 +642,7 @@ img {
 }
 
 .rooms-text {
+
     background-color:#000000;
     width: auto;
     height: auto;
@@ -549,14 +652,17 @@ img {
     
     }
 
-    .rooms-text h1 {
-        font-size: 4rem;
+.rooms-text h1 {
+
+        font-size: 5rem;
         text-transform: uppercase;
-    }
+
+}
 
 
 
 .room-item {
+
     display: flex;
     flex-wrap: wrap;
     padding: 0px;
@@ -564,41 +670,48 @@ img {
     width: 375px;
     height: 250px;
     
-    
-    
 }
 
 
 
 
 .room-link {
+
     display: flexbox;
     justify-self: center;
     align-content: baseline;
+
 }
 
 
 .rooms h2 {
+
     padding: 0px;
     color: #ffffff;
+
 }
 
 .rooms a {
+
     text-decoration: none;
    
 }
 
 
 .room-item h1 {
+
     font-size: 40px;
     padding-top: 20px;
 }
 
 .room-item h2 {
+
     font-size: 20px;
+
 }
 
 .rooms img {
+
     width: 300px;
     height: 200px;
     object-fit: cover;
@@ -610,80 +723,94 @@ img {
 
 
 .pirate {
+
     background-image: url(images/pirate-40.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     transition: background-image 750ms;
+
 }
 
 .pirate a:hover {
+
     background-image: url(images/pirate-70.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover; 
+
 }
 
 
 .murder {
+
     background-image: url(images/murder-40.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     transition: background-image 750ms;
+
 }
 
 .murder a:hover {
+
     background-image: url(images/murder-70.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover; 
+
 }
-
-
 
 
 
 
 .zombie{
+
     background-image: url(images/zombie-40.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover; 
+
 }
 
 .zombie a:hover {
+
     background-image: url(images/zombie-70.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover; 
+
 }
 
 
-
-
 .butcher {
+
     background-image: url(images/butcher-40.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover; 
+
 }
 
 .butcher a:hover {
+
     background-image: url(images/butcher-70.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover; 
 }
 
-.room-item a {    
+.room-item a {   
+
     width: 100%;
     height: 100%;
+
 }
 
 @media only screen and (max-width:400px) { 
 
     .room-item {
+
     display: flex;
     flex-wrap: wrap;
     padding: 0px;
@@ -691,30 +818,28 @@ img {
     max-width: 90%;
     width: 375px;
     height: 250px;
-    
-    
-    
-}
+      
+    }
 
-.room-item h1 {
-    font-size: 30px;
-    padding-top: 12%;
-}
+    .room-item h1 {
+        font-size: 30px;
+        padding-top: 12%;
+    }
 
 
-.zombie{
-    background-image: url(images/zombie-70.png);
-}
+    .zombie{
+        background-image: url(images/zombie-70.png);
+    }
 
-.butcher{
-    background-image: url(images/butcher-70.png);
-}
+    .butcher{
+        background-image: url(images/butcher-70.png);
+    }
 
 
 
-.murder{
-    background-image: url(images/murder-70.png);
-}
+    .murder{
+        background-image: url(images/murder-70.png);
+    }
 
 }
 
@@ -734,10 +859,10 @@ img {
 /* video */
 
 #video-container {
+
     background-color:#000000;
-    display: block;
-   
-    max-width: 1000px;
+    display: block;   
+    max-width: 1300px;
     justify-content: center;
     align-content: center;
     width: auto;
@@ -745,11 +870,12 @@ img {
     height: auto;
     margin: auto;
     text-align: center;
-    padding: 170px 5% 12% 5%;
+    padding: 170px 0 12% 0;
     
     }
 
 #video-text {
+
     padding: 0px 5% 0px 5%;
     line-height: .8;
     display: block;
@@ -757,24 +883,31 @@ img {
 
 
 #video-text h1 {
+
     text-transform: uppercase;
-    font-size: 4rem;
+    font-size: 5rem;
     line-height: 1;
     display: inline-block;
     margin-bottom: 5px;
     padding: 0px 10px 0px 10px;
+
 }
 
-#video-text h2 {
+#video-text p {
+
     text-transform: uppercase;
-    font-size: 1.8rem;
+    color: #ffffff;
+    font-size: 1.5rem;
     padding: 0;
-    margin: 0;
+    margin: 0 0 -30px 0;
+
 }
 
-#video-img img{
+#video-img img {
+
     max-width: 75%;
     margin-top: 25px;
+
 }
 
 
@@ -785,7 +918,22 @@ img {
     #video-text h1 {
        
         display: block;
+        font-size: 4.5rem;
        
+    }
+
+    #video-text p {
+
+        font-size: 1.2rem;
+        margin: 0 0 0 0;
+
+    }
+
+    #video-img img {
+
+    max-width: 90%;
+    margin-top: 25px;
+
     }
 
 }
@@ -810,6 +958,7 @@ img {
 
 
 footer {
+
     display: flex;
     background-color:rgba(54, 58, 55, 1);
     color: #ffffff;
@@ -821,20 +970,19 @@ footer {
     padding: 20px 0 60px 0px;
     column-gap:50px;
     row-gap: 30px;
-    
-    
-    
-  
    
 }
 
 .footer-section p {
+
     font-size: 1rem;
     padding: 0;
     margin-bottom: 20px;
+
 }
 
 .footer-section {
+
     text-transform: uppercase;
     height: auto;   
     line-height: 1.5;
@@ -844,6 +992,7 @@ footer {
 }
 
 .footer-button-section {
+
     align-self: center;
     justify-self: flex-start;
     text-align: left;
@@ -852,12 +1001,15 @@ footer {
     line-height: 1.5;
     text-align: left;
     min-width: 300px;
+
 }
 
 
 .footer-section img {
+
     max-width: 30px;
     padding-right: 15px;
+
 }
 
 
@@ -881,23 +1033,29 @@ footer {
 @media only screen and (max-width:300px) {  
 
     .hero-image h1 {
+
         font-size: 28px;
         padding-bottom: 25px;
+
     }
 
     .rooms h1 {
+
         font-size: 24px;
        
     }
 
 
     h2 {
+
         font-size: 16px;
+
     }
 
 
 
     .button {
+
         border-radius: 0px;
         background-color:#CF2C27;
         color: #ffffff;
@@ -908,9 +1066,11 @@ footer {
         text-align: center;
         text-decoration: none;
         font-size: 14px;
+
     }
 
     .header-container {
+
         justify-content: center;
 
     }
@@ -924,6 +1084,7 @@ footer {
     }
 
     .room-item {
+
         display: flexbox;
         padding: 0px;
         background-color:#000000;
@@ -937,7 +1098,9 @@ footer {
 
 
     .rooms img {
+
         max-width: 100%;
+
     }
 
 
@@ -950,11 +1113,15 @@ footer {
     }
 
     .mobile-nav {
+
         display: none;
+
     }
 
     p {
+
         font-size: 12px;
+
     }
 
 
